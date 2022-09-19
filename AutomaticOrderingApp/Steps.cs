@@ -16,6 +16,7 @@ namespace AutomaticOrderingApp
 
         public void SearchProduct(string product)
         {
+            driver.FindElement(SearchBar).Clear();
             driver.FindElement(SearchBar).SendKeys(product);
             driver.FindElement(SearchBtn).Click();
         }
@@ -28,7 +29,10 @@ namespace AutomaticOrderingApp
         public void AddProductToChart()
         {
             driver.FindElement(AddToChart).Click();
+
         }
+
+
 
     }
 }
