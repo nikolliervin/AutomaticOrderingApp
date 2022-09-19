@@ -9,7 +9,7 @@
 
             Steps.LandingOnThePage();
 
-            Steps.SearchProduct("Barilla");
+            Steps.SearchProduct("Barilla farfalle makarona");
 
 
         }

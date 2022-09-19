@@ -7,5 +7,7 @@ namespace AutomaticOrderingApp
         public By SearchBar => By.XPath("//*[@id='s']");
 
         public By SearchBtn => By.XPath("//*[@id='searchform']/div/button");
+
+        public By ProductName => By.XPath("//*[@id='products_List']/div/div[1]/div/a[2]/span[1]");
     }
 }

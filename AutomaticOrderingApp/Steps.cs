@@ -20,5 +20,12 @@ namespace AutomaticOrderingApp
             driver.FindElement(SearchBtn).Click();
         }
 
+
+
+        public void AddProductToChart()
+        {
+
+        }
+
     }
 }
