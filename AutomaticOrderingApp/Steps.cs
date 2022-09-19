@@ -20,11 +20,14 @@ namespace AutomaticOrderingApp
             driver.FindElement(SearchBtn).Click();
         }
 
-
+        public bool CheckProductName(string name)
+        {
+            return driver.FindElement(ProductName).Text == name;
+        }
 
         public void AddProductToChart()
         {
-
+            driver.FindElement(AddToChart).Click();
         }
 
     }
