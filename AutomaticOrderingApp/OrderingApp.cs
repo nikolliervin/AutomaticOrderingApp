@@ -8,14 +8,17 @@
             var Steps = new Steps();
 
             var Products = new Products();
+
             Steps.LandingOnThePage();
+
             foreach (var item in Products.products)
             {
                 Steps.SearchProduct(item.Key);
                 Steps.CheckProductName(item.Key);
                 Steps.AddProductToChart();
-
             }
+
+
 
 
 
