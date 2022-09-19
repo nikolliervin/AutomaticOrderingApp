@@ -9,6 +9,8 @@
 
             Steps.LandingOnThePage();
 
+            Steps.SearchProduct("Barilla");
+
 
         }
     }

@@ -14,5 +14,11 @@ namespace AutomaticOrderingApp
             driver.Navigate().GoToUrl(URL);
         }
 
+        public void SearchProduct(string product)
+        {
+            driver.FindElement(SearchBar).SendKeys(product);
+            driver.FindElement(SearchBtn).Click();
+        }
+
     }
 }
