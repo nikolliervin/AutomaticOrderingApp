@@ -11,6 +11,11 @@
 
             Steps.SearchProduct("Barilla farfalle makarona");
 
+            Steps.CheckProductName("Barilla farfalle makarona");
+
+            Steps.AddProductToChart();
+
+
 
         }
     }
