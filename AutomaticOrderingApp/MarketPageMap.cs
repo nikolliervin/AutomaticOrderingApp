@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OpenQA.Selenium;
 
 namespace AutomaticOrderingApp
 {
-    internal class MarketPageMap
+    public class MarketPageMap
     {
+        public By SearchBar => By.XPath("//*[@id='s']");
     }
 }

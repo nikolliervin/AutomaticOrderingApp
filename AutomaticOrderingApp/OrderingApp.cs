@@ -2,12 +2,13 @@
 {
     internal class OrderingApp
     {
-        public OrderingApp()
-        {
 
-        }
         static void Main(string[] args)
         {
+            var Steps = new Steps();
+
+            Steps.LandingOnThePage();
+
 
         }
     }
