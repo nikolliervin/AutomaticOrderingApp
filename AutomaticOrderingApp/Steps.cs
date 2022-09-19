@@ -32,6 +32,11 @@ namespace AutomaticOrderingApp
 
         }
 
+        public void ViewChart()
+        {
+            driver.FindElement(ChartBtn).Click();
+            driver.FindElement(LookAtChartBtn).Click();
+        }
 
 
     }

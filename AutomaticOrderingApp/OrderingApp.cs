@@ -18,7 +18,7 @@
                 Steps.AddProductToChart();
             }
 
-
+            Steps.ViewChart();
 
 
 
