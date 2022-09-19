@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutomaticOrderingApp
 {
-    internal class Program
+    internal class MarketPageMap
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
