@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System.Collections.Generic;
 using System.Configuration;
 
 namespace AutomaticOrderingApp
@@ -36,6 +37,15 @@ namespace AutomaticOrderingApp
         {
             driver.FindElement(ChartBtn).Click();
             driver.FindElement(LookAtChartBtn).Click();
+        }
+
+        public void SetAmounts(Dictionary<string, int> products)
+        {
+            for (int i = 0; i < products.Count; i++)
+            {
+                driver.FindElement(AmountInput(i)).SendKeys(products.Values.ToString());
+
+            }
         }
 
 
