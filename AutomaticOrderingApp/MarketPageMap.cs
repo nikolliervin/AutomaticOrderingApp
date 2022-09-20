@@ -15,5 +15,7 @@ namespace AutomaticOrderingApp
         public By ChartBtn => By.XPath("//*[@id='main_header']/div[1]/div/div[3]/a[1]");
 
         public By LookAtChartBtn => By.XPath("//*[@id='woocommerce_widget_cart-2']/div/p[2]/a[1]");
+
+        public By AmountInput(int option) => By.XPath($"//*[@id='inner_page']/div/div/div/div/form/table/tbody/tr[${option}]/td[5]/div/input");
     }
 }
