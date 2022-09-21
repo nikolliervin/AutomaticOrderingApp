@@ -43,20 +43,19 @@ namespace AutomaticOrderingApp
 
         public void SetAmounts(Dictionary<string, int> products)
         {
-            for (int i = 0; i < products.Count; i++)
+            for (int i = 1; i < products.Count; i++)
             {
                 KeyValuePair<string, int> product = products.ElementAt(i);
 
                 Thread.Sleep(1000);
-                driver.FindElement(AmountInput(i + 1)).Clear();
+                driver.FindElement(AmountInput(i)).Clear();
 
 
-                driver.FindElement(AmountInput(i + 1)).SendKeys(product.Value.ToString());
+                driver.FindElement(AmountInput(i)).SendKeys(product.Value.ToString());
 
             }
 
-            Thread.Sleep(5000);
-            driver.Quit();
+
 
 
         }

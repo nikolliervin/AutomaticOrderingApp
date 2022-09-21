@@ -5,7 +5,7 @@ namespace AutomaticOrderingApp
     public class Products
     {
         public Dictionary<string, int> products = new Dictionary<string, int>
-        {
+        {   {" ",1},
             {"Barilla farfalle makarona",4 },
             {"Solei vaj luledielli",1 },
             {"coca cola 1.5",5 },
