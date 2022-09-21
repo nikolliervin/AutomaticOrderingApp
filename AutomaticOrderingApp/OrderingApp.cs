@@ -19,6 +19,7 @@
             }
 
             Steps.ViewChart();
+            Steps.SetAmounts(Products.products);
 
 
 

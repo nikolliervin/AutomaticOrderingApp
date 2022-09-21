@@ -2,6 +2,7 @@
 using OpenQA.Selenium.Chrome;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Linq;
 
 namespace AutomaticOrderingApp
 {
@@ -41,11 +42,25 @@ namespace AutomaticOrderingApp
 
         public void SetAmounts(Dictionary<string, int> products)
         {
-            for (int i = 0; i < products.Count; i++)
+            for (int i = 1; i < products.Count; i++)
             {
-                driver.FindElement(AmountInput(i)).SendKeys(products.Values.ToString());
+                KeyValuePair<string, int> product = products.ElementAt(i);
+
+
+
+                /*TODO: Fix the ugly method*/
+                /*driver.FindElement(AmountInput(i)).Clear();
+                driver.FindElement(TitlePageToClick).Click();
+                foreach (var item in products)
+                {
+                    driver.FindElement(AmountInput(i)).SendKeys(item.Value.ToString());
+                    break;
+                }
+                */
 
             }
+
+
         }
 
 
