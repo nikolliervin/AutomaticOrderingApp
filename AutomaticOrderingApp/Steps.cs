@@ -38,6 +38,7 @@ namespace AutomaticOrderingApp
         public void ViewChart()
         {
             driver.FindElement(ChartBtn).Click();
+            Thread.Sleep(1000);
             driver.FindElement(LookAtChartBtn).Click();
         }
 
