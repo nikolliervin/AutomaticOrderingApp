@@ -47,9 +47,9 @@ namespace AutomaticOrderingApp
             {
                 KeyValuePair<string, int> product = products.ElementAt(i);
 
-                /*TODO: Fix the ugly method*/
+                Thread.Sleep(1000);
                 driver.FindElement(AmountInput(i + 1)).Clear();
-                driver.FindElement(TitlePageToClick).Click();
+
 
                 driver.FindElement(AmountInput(i + 1)).SendKeys(product.Value.ToString());
 
@@ -58,6 +58,11 @@ namespace AutomaticOrderingApp
             Thread.Sleep(5000);
             driver.Quit();
 
+
+        }
+
+        public void RefreshChart()
+        {
 
         }
 
