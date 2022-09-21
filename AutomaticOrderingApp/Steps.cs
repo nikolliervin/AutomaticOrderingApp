@@ -63,7 +63,7 @@ namespace AutomaticOrderingApp
 
         public void RefreshChart()
         {
-
+            driver.FindElement(RefreshChartBtn).Click();
         }
 
 
