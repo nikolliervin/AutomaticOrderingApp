@@ -21,5 +21,7 @@ namespace AutomaticOrderingApp
         public By TitlePageToClick => By.XPath("//*[@id='inner_page']/div/div/div/h2");
 
         public By RefreshChartBtn => By.XPath("//*[@id='inner_page']/div/div/div/div/form/table/tbody/tr[12]/td/button");
+
+        public By CheckoutDetailsBtn => By.XPath("//*[@id='inner_page']/div/div/div/div/div[2]/div/div/a");
     }
 }

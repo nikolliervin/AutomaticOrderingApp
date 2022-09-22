@@ -34,6 +34,7 @@ namespace AutomaticOrderingApp
             Steps.ViewChart();
             Steps.SetAmounts(Products.products);
             Steps.RefreshChart();
+            Steps.GetCheckOut();
 
 
 

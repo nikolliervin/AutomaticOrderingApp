@@ -38,7 +38,7 @@ namespace AutomaticOrderingApp
         public void ViewChart()
         {
             driver.FindElement(ChartBtn).Click();
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
             driver.FindElement(LookAtChartBtn).Click();
         }
 
@@ -54,6 +54,8 @@ namespace AutomaticOrderingApp
 
                 driver.FindElement(AmountInput(i)).SendKeys(product.Value.ToString());
 
+
+
             }
 
 
@@ -64,6 +66,11 @@ namespace AutomaticOrderingApp
         public void RefreshChart()
         {
             driver.FindElement(RefreshChartBtn).Click();
+        }
+
+        public void GetCheckOut()
+        {
+            driver.FindElement(CheckoutDetailsBtn).Click();
         }
 
 
