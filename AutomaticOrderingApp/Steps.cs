@@ -74,8 +74,16 @@ namespace AutomaticOrderingApp
             driver.FindElement(CheckoutDetailsBtn).Click();
         }
 
-        public void CheckoutDetails()
+        public void SetCheckoutDetails()
         {
+            driver.FindElement(FirstName).SendKeys(ConfigurationManager.AppSettings["Name"]);
+            driver.FindElement(LastName).SendKeys(ConfigurationManager.AppSettings["Surname"]);
+            driver.FindElement(Street).SendKeys(ConfigurationManager.AppSettings["Street"]);
+            driver.FindElement(Appartment).SendKeys(ConfigurationManager.AppSettings["Appartment"]);
+            driver.FindElement(City).SendKeys(ConfigurationManager.AppSettings["City"]);
+            driver.FindElement(PhoneNumber).SendKeys(ConfigurationManager.AppSettings["PhoneNumber"]);
+            driver.FindElement(Email).SendKeys(ConfigurationManager.AppSettings["Email"]);
+
 
         }
 

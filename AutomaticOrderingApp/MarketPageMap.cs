@@ -35,7 +35,6 @@ namespace AutomaticOrderingApp
 
         public By Email => By.XPath("//*[@id='billing_email']");
 
-        public By CCPayment => By.XPath("//*[@id='payment_method_bacs']");
 
         public By CashPayment => By.XPath("//*[@id='payment_method_cod']");
 
