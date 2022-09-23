@@ -35,6 +35,8 @@ namespace AutomaticOrderingApp
             Steps.SetAmounts(Products.products);
             Steps.RefreshChart();
             Steps.GetCheckOut();
+            Steps.SetCheckoutDetails();
+            Steps.SelectPaymentMethod();
 
 
 

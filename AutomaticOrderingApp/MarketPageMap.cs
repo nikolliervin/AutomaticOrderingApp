@@ -26,8 +26,8 @@ namespace AutomaticOrderingApp
 
         public By FirstName => By.XPath("//*[@id='billing_first_name']");
         public By LastName => By.XPath("//*[@id='billing_last_name']");
-        public By Street => By.XPath("//*[@id='billing_address_1']]");
-        public By Appartment => By.XPath("//*[@id='billing_address_2']]");
+        public By Street => By.XPath("//*[@id='billing_address_1']");
+        public By Appartment => By.XPath("//*[@id='billing_address_2']");
 
         public By City => By.XPath("//*[@id='billing_city']");
 
@@ -35,7 +35,7 @@ namespace AutomaticOrderingApp
 
         public By Email => By.XPath("//*[@id='billing_email']");
 
-
+        public By CreditCardPayment => By.XPath("//*[@id='payment_method_bacs']");
         public By CashPayment => By.XPath("//*[@id='payment_method_cod']");
 
 

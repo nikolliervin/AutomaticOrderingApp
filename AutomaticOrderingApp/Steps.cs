@@ -87,6 +87,16 @@ namespace AutomaticOrderingApp
 
         }
 
+        public void SelectPaymentMethod()
+        {
+            Thread.Sleep(1000);
+            if (ConfigurationManager.AppSettings["PaymentMethod"] == "Cash")
+                driver.FindElement(CashPayment).Click();
+
+            else
+                driver.FindElement(CreditCardPayment).Click();
+        }
+
 
 
 
