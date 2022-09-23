@@ -8,18 +8,14 @@ namespace AutomaticOrderingApp
 
         static void Main(string[] args)
         {
+            //   ToDo: 
+            //    1)Inspect headless mode
+            //    2)Set the app to run automatically
             var Steps = new Steps();
 
             var Products = new Products();
 
             Steps.LandingOnThePage();
-
-            /*foreach (var item in Products.products)
-            {
-                Steps.SearchProduct(item.Key);
-                Steps.CheckProductName(item.Key);
-                Steps.AddProductToChart();
-            }*/
 
             for (int i = 1; i < Products.products.Count; i++)
             {
