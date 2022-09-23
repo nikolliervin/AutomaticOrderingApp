@@ -97,6 +97,11 @@ namespace AutomaticOrderingApp
                 driver.FindElement(CreditCardPayment).Click();
         }
 
+        public void SetOrder()
+        {
+            driver.FindElement(SetOrderBtn).Click();
+        }
+
 
 
 

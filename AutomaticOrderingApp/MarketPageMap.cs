@@ -38,6 +38,8 @@ namespace AutomaticOrderingApp
         public By CreditCardPayment => By.XPath("//*[@id='payment_method_bacs']");
         public By CashPayment => By.XPath("//*[@id='payment_method_cod']");
 
+        public By SetOrderBtn => By.XPath("//*[@id='place_order']");
+
 
     }
 }
