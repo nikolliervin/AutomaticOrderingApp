@@ -70,8 +70,11 @@ namespace AutomaticOrderingApp
 
         public void GetCheckOut()
         {
+            Thread.Sleep(5000);
             driver.FindElement(CheckoutDetailsBtn).Click();
         }
+
+
 
 
     }
