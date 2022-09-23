@@ -74,6 +74,11 @@ namespace AutomaticOrderingApp
             driver.FindElement(CheckoutDetailsBtn).Click();
         }
 
+        public void CheckoutDetails()
+        {
+
+        }
+
 
 
 

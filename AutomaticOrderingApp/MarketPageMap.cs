@@ -23,5 +23,12 @@ namespace AutomaticOrderingApp
         public By RefreshChartBtn => By.XPath("//*[@id='inner_page']/div/div/div/div/form/table/tbody/tr[12]/td/button");
 
         public By CheckoutDetailsBtn => By.XPath("//*[@id='inner_page']/div/div/div/div/div[2]/div/div/a");
+
+        public By FirstName => By.XPath("//*[@id='billing_first_name']");
+        public By LastName => By.XPath("//*[@id='billing_last_name']");
+        public By Street => By.XPath("//*[@id='billing_address_1']]");
+        public By Appartment => By.XPath("//*[@id='billing_address_2']]");
+
+
     }
 }
